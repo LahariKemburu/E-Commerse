@@ -1,0 +1,45 @@
+<% layout("/layouts/boylerplate") -%>
+    <link rel="stylesheet" href="/css/sign_in.css">
+    <button class="name" style="margin-left: 570px; margin-top:30px;background-color: white;color:black;border:none"  onclick=" handleClick()"><h4>TrendSphere</h4><h5>.in</h5></button></div><div></div>
+    <div class="card">
+        <h1>Sign in</h1>
+        <form action="" class="login-card-form">
+        <div>
+            <p><label for="username">Username</label></p>
+            <input type="text" name="username" placeholder="Enter the Username" id="username" class="signIn-input">
+        </div>
+        <div>
+            <p><label for="password">Password</label></p>
+            <input type="password" name="password" placeholder="Enter your password" id="password" class="signIn-input">
+        </div>
+        <button type="submit">Continue</button>
+        </form>
+        <p>
+            By continuing, you agree to TrendSphere's<a href="#" style="text-decoration: none;"> Conditions of use</a>
+            and <a href="#" style="text-decoration: none;">Privacy Notice</a>
+        </p>
+        <p>  &#x00BB;
+            <a href="#" style="text-decoration: none;"> Need help? </a>
+        </p>
+        <hr style="color:rgb(80, 77, 77)">
+        <p class="nrml_text">
+            Buying for work?
+        </p>
+        <a href="#" style="text-decoration: none;margin-top: -10px;">Shop on TrendSphere Business</a>
+    </div>
+    <div class="bottom">
+        <p style="margin-left: 600px; ">New to TrendSphere ? </p>
+        <button onclick="login()">Create your TrendSphere account</button></div>
+
+
+<script>
+    const Btn = document.getElementById("logo");
+function nav_to_main() {
+    const nextPageUrl = "/Products";
+    window.location.href = nextPageUrl;
+}
+function login(){
+    const n="/signup";
+    window.location.href=n;
+}
+</script>

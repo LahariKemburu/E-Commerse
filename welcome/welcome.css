@@ -1,0 +1,51 @@
+#back {
+    text-align: center;
+    background-color: black;
+    color: transparent;
+    animation: rainbowAnimation 5s 1; 
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, red);
+    -webkit-background-clip: text;
+}
+@keyframes rainbowAnimation {
+    0% {
+        background-image: linear-gradient(to right, violet, indigo, green, yellow, red);
+        -webkit-background-clip: text;
+    }
+    25% {
+        background-image: linear-gradient(to right, indigo, blue, red, green, yellow);
+        -webkit-background-clip: text;
+    }
+    50% {
+        background-image: linear-gradient(to right, blue, green, violet, yellow, indigo);
+        -webkit-background-clip: text;
+    }
+    75% {
+        background-image: linear-gradient(to right, green, yellow, blue);
+        -webkit-background-clip: text;
+    }
+    100% {
+        background-image: linear-gradient(to right, yellow, red, violet);
+        -webkit-background-clip: text;
+    }
+    to {
+        transform: scale(2.5);
+        color: transparent;
+    }
+}
+@keyframes background_change {
+    100% {
+        background: linear-gradient(to right, rgb(207, 182, 207), rgb(140, 120, 155), rgb(140, 140, 250), rgb(152, 216, 152), rgb(240, 240, 90), rgb(223, 69, 69));
+    }
+    0% {
+        background: linear-gradient(to right, rgb(255, 255, 255)); 
+    }
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    margin: 0; 
+    background: white;
+    animation: background_change 2s 1;
+}

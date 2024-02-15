@@ -1,0 +1,172 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  row-gap: 20px;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+  height: 350px;
+  width: 45vh;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  height: 70%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin-top: 0;
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
+}
+.products-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show_image img{
+  max-width: 100%;
+    width: 350px;
+    height: 400px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+.show_image{
+  text-align: left;
+  margin:50px;
+  display: sticky ;
+  top:10px;
+}
+.container1{
+  display:flex;
+}
+.show_details{
+  width:500px;
+  margin:50px;
+  h6{
+    margin-top: -10px;
+    font-size: larger;
+  }
+}
+.offer-card {
+  border: 1px solid #ddd;
+  border-radius: 5px; 
+  padding: 2px; 
+  margin: 2px; 
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-top: 10px;
+}
+.show-methods{
+  margin-top: 15px;
+  display:flex;
+  justify-content: space-evenly;
+}
+.offers{
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+      h6{
+        margin-top: 10px;
+        font-size: medium;
+      }
+      p{
+        margin-top: -27px;
+      }
+}  
+.show-methods div i{
+  font-size:1.2rem;
+}
+
+.show-methods div{
+  text-align: center;
+}
+
+.show-methods div span{
+  display:block;
+}
+
+.show_buy_opt{
+  margin:50px;
+}
+.buy_opt{
+  border: 1px solid #ddd;
+  border-radius: 5px; 
+  padding: 6px; 
+  width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-top: 10px;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  background-color: #424344;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  font-size: 0.78em;
+  cursor: pointer;
+  border-radius: 4px;
+  margin:15px;
+
+}
+
+.quantity-input {
+  width: 170px;
+  height: 25px;
+  text-align: center;
+  font-size: 1em;
+  margin: 20px 5px;
+  border-radius: 5px;
+
+}
+
+
+
+

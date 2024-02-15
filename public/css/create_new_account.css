@@ -1,0 +1,45 @@
+.logo{
+    text-align: center;
+    margin-top: 10px;
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color:black;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    p{
+        display: inline-block;
+        color:black;
+        font-weight: 100;
+        font-size: medium;
+    }
+}
+
+.card2{
+    margin-top: 10px;
+    border: black solid 2px;
+    max-width: 350px;
+    box-shadow: 0 0 10px black;
+    margin-left: 35%;
+    padding: 20px 25px;
+    border-radius: 10px;
+    padding-bottom: 26px;
+    h1{
+        font-weight: 100;
+        margin-top: -5px;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    input{
+        margin-top:-10px;
+    }
+    .bottom{
+        margin-top: 40px;
+        line-height: 0.5cm;
+    }
+    a{
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,47 @@
+<div class="header">
+        <div class="name">
+            <button id="button"><h4>TrendSphere</h4><h5>.in</h5></button></div><div>
+            <button  id="button"   onclick="toggleCard()">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+                <h4 class="changelocation" style="display: inline; color:white">Update Location</h5> 
+            </button>
+            
+            
+            <div id="card-container">
+            <div>
+            <h3>Choose your location</h3></div>
+            <hr style="color:darkgray;margin-top: -5px;">
+            <p>Select a delivery location to see product availability and delivery options</p>
+            <button id="btt">Sign in to see your address</button>
+            <h6>or enter an Indian pincode</h6>
+            <hr style="margin-top: -10px;">
+            <div class="bot">
+            <input type="text" id="pincode" style="height:30px; border:solid 2px darkgrey;">
+            <button   style="height:30px;border-radius: 10px;" onclick="getLocation()" >apply</button>
+           </div>
+           </div>
+        </div>
+        <div class="search">
+        <input type="text" class="search-input" onclick="search()" placeholder="Search TrendSphere.in" style="width: 400px; height: 33px; background-color: white;padding-left: 30px;"> 
+        <button class="search-button" onclick="searchproducts()">&#128269;</button>
+       </div>
+        
+       <span class="sign-up">
+            <button id="hello-bt" onclick="nav_to_signin"><p>Hello,sign in </p><h3>Accounts&Lists</h3> 
+        </button>
+        </span>
+
+        <span>
+         <button id="hello-btn"><p>Returns</p><h3>&Orders</h3></button>
+        </span>
+
+        <span>
+            <button id="cart" onclick="nav_to_cart()"><span class="material-symbols-outlined">
+                shopping_cart
+                </span>Cart</button>
+               
+        </span> 
+    </div>
+    <script src="js/slide.js"></script>

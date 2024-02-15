@@ -1,0 +1,74 @@
+<% layout("/layouts/boylerplate") -%>
+<div class="container1">
+<div class="show_image">
+    <img src="<%=product.image%>" >
+</div>
+<div class="show_details">
+    <h2><%=product.title%></h2>
+    <hr style="color:darkgrey">
+    <h2> &#163;<%=product.price%></h2>
+    <h6>Inclusive of all taxes</h6>
+    <hr style="color:darkgrey">
+    <h3>Offers</h3>
+    <div class="offers">
+        <div class="offer-card">
+            <h6>Payment Offers</h6>
+            <p>Bella Vita Buy 2 Get 5%, Buy 3 Get 10%.......</p>
+        </div>
+        <div class="offer-card">
+            <h6>Bank Offers</h6>
+            <p>10% Instant Discount up to INR 1000 on Citibank ....</p>
+        </div>
+    </div>
+    <div class="show-methods">
+        <div>
+            <p><i class="fa-regular fa-money-bill-1"></i></p>
+            <p>Pay on <span>Delivery</span></p>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-box-archive"></i></p>
+            <p>10 days <span>Returnable</span></p>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-truck"></i></p>
+            <p>TrendSphere <span>Delivered</span></p>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-truck-fast"></i></p>
+            <p>Free <span>Delivery</span></p>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-lock"></i></p>
+            <p>Secure <span>Transaction</span></p>
+        </div>
+    </div>
+    <hr style="color:darkgrey">
+    <p class="about"><%=product.description%></p>
+</div>
+<div class="show_buy_opt">
+    <div class="buy_opt">
+        <h2> &#163;<%=product.price%></h2>
+        <p> <a href="#" style="text-decoration: none;">FREE DELIVERY</a> on orders dispatched by TrendSphere over ₹499.</p>
+        <span class="material-symbols-outlined">
+            location_on
+        </span>
+        <a href="#" style="text-decoration: none;"> Delivering to Vijayawada 522502 <br>-Update Location</a>
+        <h2 style="color: rgb(18, 107, 18); margin-top: 10px;">In Stock</h2>
+        <p style="font-size: 1.08rem; margin-top: -3px;">Sold by Perfumers Perfume and Fulfilled by TrendSphere.</p>
+        <div class="quantity-container">
+            <button class="quantity-btn" onclick="updateQuantity(-1)">-</button>
+            <input type="text" class="quantity-input" value="1">
+            <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
+        </div>
+        <a href="/products/<%= product._id %>/cart" style="display: inline-block; text-decoration: none;">
+            <button style="height: 30px; width: 200px; border-radius: 8px; background-color: yellow; margin-bottom: 10px;margin-left: 38px;">Add to Cart</button>
+        </a>
+        <br>
+        <button style="height: 30px;width: 200px;border-radius: 8px;background-color: orange;margin-top:10px;margin-left:40px">Buy Now</button>
+        <p style="margin-left: 50px;margin-top: 20px;color:#007185;"><i class="fa-solid fa-lock"></i> Secure Transaction</p>
+        <input type="checkbox" style="margin-left: 20px;"> Add Giftbox</p>
+        <hr style="color: darkgray;">
+        <button style="height: 30px;width: 200px;border-radius: 8px;margin-left: 40px;">Add to Wishlist</button>
+    </div>
+</div>
+</div>

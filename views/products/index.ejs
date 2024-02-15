@@ -1,0 +1,16 @@
+<% layout("/layouts/boylerplate") -%>
+<!-- <link rel="stylesheet" href="css/p.css"></link> -->
+
+<div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1 mt-3">
+    <%for(product of products){%>
+        <a href="/products/<%=product._id%>"  class="products-link">
+            <div class="card ">
+                <img src="<%=product.image %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title"><%= product.title%></h3>
+                    <h3 class="'card-price">&#163;<%= product.price%></h3>
+                </div>
+            </div>
+        </a>
+        <% } %>
+</div>
